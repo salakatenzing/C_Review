@@ -16,6 +16,20 @@ int main() {
 	int array_length = sizeof(size_val)/sizeof(size_val[0]);
 	printf("size of array in bytes: %d \n", size);
 	printf("length of array: %d \n", array_length);
+
+	int add(int a, int b){
+		int sum = a + b;
+		return sum;
+	}
+	int add_ex1 = add(4, 5);
+	printf("add_function: %d \n", add_ex1);
+
+	void greet(char name[]){
+		printf("Hello, %s\n", name);
+	}
+	char user[] = "John Doe";
+
+	greet(user);
 	return 0;
 
 }
