@@ -30,6 +30,11 @@ int main() {
 	char user[] = "John Doe";
 
 	greet(user);
+
+
+
+	int* p_value_address = &p_value;
+	printf("address of p_value: %d\n", *p_value_address);
 	return 0;
 
 }
