@@ -35,6 +35,14 @@ int main() {
 
 	int* p_value_address = &p_value;
 	printf("address of p_value: %d\n", *p_value_address);
+
+	struct Student {
+		char name[30];
+		int id;
+	};
+
+	struct Student Alice = {"Alice", 1};
+	printf("Student name: %s\n", Alice.name);
 	return 0;
 
 }
